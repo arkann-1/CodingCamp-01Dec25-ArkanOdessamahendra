@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <img src="images/revoU-logo.png" alt="logo" width="60px">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Our Profile</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#message">Message Us</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- WELCOME SECTION -->
+        <div class="section-header">
+            <h1>Hi <span id="welcomeName">User</span>, Welcome To Website</h1>
+            <p>Ini adalah website latihan pertama</p>
+        </div>
+
+        <!-- BANNER -->
+        <div class="banner-placeholder">
+            <span>1366×578</span>
+        </div>
+
+        <hr>
+
+        <!-- HQ -->
+        <section class="headquarter">
+            <h2>Our Headquarter</h2>
+
+            <div class="city-list">
+                <div class="city">
+                    <div class="circle">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <p>Jakarta</p>
+                </div>
+
+                <div class="city">
+                    <div class="circle">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <p>Bandung</p>
+                </div>
+
+                <div class="city">
+                    <div class="circle">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- MESSAGE US -->
+        <section id="message" class="message">
+            <h2>Message Us</h2>
+
+            <div class="form-output-wrapper">
+
+                <!-- FORM -->
+                <form id="messageForm" onsubmit="submitForm(event)">
+
+                    <div class="row">
+                        <label>Nama</label>
+                        <span>:</span>
+                        <input type="text" id="nama" required>
+                    </div>
+
+                    <div class="row">
+                        <label>Tanggal Lahir</label>
+                        <span>:</span>
+                        <input type="date" id="tgl" required>
+                    </div>
+
+                    <div class="row">
+                        <label>Jenis Kelamin</label>
+                        <span>:</span>
+                        <div class="gender-group">
+                            <label><input type="radio" name="jk" value="Laki-Laki" required> Laki-Laki</label>
+                            <label><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label>Pesan</label>
+                        <span>:</span>
+                        <textarea id="pesan" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+
+                <!-- OUTPUT -->
+                <div class="output">
+                    <h3>Current Time: <span id="currentTime"></span></h3>
+
+                    <p><b>Nama :</b> <span id="outNama"></span></p>
+                    <p><b>Tanggal Lahir :</b> <span id="outTgl"></span></p>
+                    <p><b>Jenis Kelamin :</b> <span id="outJk"></span></p>
+                    <p><b>Pesan :</b> <span id="outPesan"></span></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created By RevoU</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
